@@ -2,25 +2,25 @@
 <plugin id="datoms.custom.plugin" version="1.0.0"
         xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordovaDatoms</name>
-    <js-module name="cordovaDatoms" src="www/cordovaDatoms.js">
-        <clobbers target="cordova.plugins.cordovaDatoms" />
+    <name>CordovaDatoms</name>
+    <js-module name="CordovaDatoms" src="www/CordovaDatoms.js">
+        <clobbers target="cordova.plugins.CordovaDatoms" />
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="cordovaDatoms">
-                <param name="android-package" value="io.datoms.plugin.cordovaDatoms" />
+            <feature name="CordovaDatoms">
+                <param name="android-package" value="io.datoms.plugin.CordovaDatoms" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
-        <source-file src="src/android/cordovaDatoms.java" target-dir="src/io/datoms/plugin/" />
+        <source-file src="src/android/CordovaDatoms.java" target-dir="src/io/datoms/plugin/" />
     </platform>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="cordovaDatoms">
-                <param name="ios-package" value="cordovaDatoms" />
+            <feature name="CordovaDatoms">
+                <param name="ios-package" value="CordovaDatoms" />
             </feature>
         </config-file>
-        <source-file src="src/ios/cordovaDatoms.m" />
+        <source-file src="src/ios/CordovaDatoms.m" />
     </platform>
 </plugin>
