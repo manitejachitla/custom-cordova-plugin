@@ -1,4 +1,4 @@
-package io.datoms.plugin;
+package io.datoms.plugin.cordovaDatoms;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
