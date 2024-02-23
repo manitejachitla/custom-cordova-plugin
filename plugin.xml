@@ -4,7 +4,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>CordovaDatoms</name>
     <js-module name="CordovaDatoms" src="www/CordovaDatoms.js">
-        <clobbers target="cordova.plugins.CordovaDatoms" />
+        <clobbers target="CordovaDatoms" />
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
