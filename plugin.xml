@@ -13,7 +13,7 @@
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
-        <source-file src="src/android/cordovaDatoms.java" target-dir="src/io.datoms.plugin/cordovaDatoms" />
+        <source-file src="src/android/cordovaDatoms.java" target-dir="src/io/datoms/plugin/cordovaDatoms" />
     </platform>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
