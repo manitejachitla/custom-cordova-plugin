@@ -18,10 +18,22 @@ public class cordovaDatoms extends CordovaPlugin {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
             return true;
+        }else if (action.equals("TrackUser")) {
+            String event_name = args.getString(0);
+            JSONObject event_data = args.getJSONObject(1);
+            this.TrackUser(event_name,event_data, callbackContext);
+            return true;
         }
         return false;
     }
 
+    private void TrackUser(String name,JSONObject data,CallbackContext callbackContext) throws JSONException {
+        JSONObject success_data=new JSONObject();
+        success_data.put("name",name);
+        success_data.put("data",data);
+        callbackContext.success(success_data);
+        //getJSONObject
+    }
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
